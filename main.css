@@ -1,0 +1,315 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+@font-face {
+  font-family: "SSSymbolicons";
+  src: url('fonts/ss-symbolicons-block.eot');
+  src: url('fonts/ss-symbolicons-block.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ss-symbolicons-block.woff') format('woff'),
+       url('fonts/ss-symbolicons-block.ttf')  format('truetype'),
+       url('fonts/ss-symbolicons-block.svg#SSSymboliconsBlock') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+font-family:"Avenir LT W01 35 Light";
+src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),url("Fonts/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),url("Fonts/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),url("Fonts/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01 85 Heavy";
+src:url("fonts/f61bf0f6-c193-41 .eot?#iefix");
+src:url("fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),url("fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),url("fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),url("fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
+}
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"]{-ms-zoom: 1;}
+
+.ss-icon, .ss-icon.ss-symbolicons-block,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-symbolicons-block:before, [class*=" ss-"].ss-symbolicons-block:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-symbolicons-block.right:after, [class*=" ss-"].ss-symbolicons-block.right:after {
+  font-family: "SSSymbolicons";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before{display:none;content:'';}
+body { margin: 0; box-sizing: border-box; font-size: 1.4rem; line-height: 1.4; background-color: firebrick; color: #fff; text-align: center; }
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: #b3d4fc; text-shadow: none; }
+h1,h2 { font-family: Avenir, "Avenir LT W01 85 Heavy", sans-serif; font-size: 5rem; line-height: 1; margin: 0; margin-top: 1rem; font-style: italic; }
+h2 { font-size: 4rem; }
+h1:after { content: "beta"; font-size: 1.2rem; font-style: normal; position: relative; top: .5rem; }
+p { font-weight: 100; font-family: Avenir, "Avenir LT W01 35 Light", sans-serif; margin: 1rem 10rem; }
+footer { font-size: smaller; }
+footer a { color: #fff; text-decoration: none; border-bottom: 1px dashed #fff; }
+dl { font-size: 2.5rem; width: 12rem; margin: 0 auto; text-align: center; font-family: "SS Symbolicons" }
+dt, dd { display: inline; }
+dd { font-family: Avenir, "Avenir LT W01 35 Light", sans-serif; }
+
+@media only screen and (max-width: 700px) {
+    p { margin: 1rem; } 
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    * { background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important; }
+    img { page-break-inside: avoid; max-width: 100% !important; }
+    footer,header { display: none; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}
+
+/*! SocialCount - v0.1.4 - 2012-12-11
+* https://github.com/filamentgroup/SocialCount
+* Copyright (c) 2012 zachleat; Licensed MIT */
+
+.socialcount {
+	color: #fff; font-family: Avenir, "Avenir LT W01 35 Light", sans-serif;
+}
+.socialcount > li {
+	background-color: #900;
+}
+.socialcount > li,
+.socialcount > li > a:focus,
+.socialcount .loading {
+	border-radius: 5px;
+}
+.socialcount > li > a:focus,
+.socialcount > li:hover,
+.socialcount > li.hover /* fix for IE and iframes */ {
+	background-color: #464646;
+}
+/* Special class added to count when it's >= the minimum */
+.socialcount .count.minimum {
+}
+
+
+/* Base CSS */
+
+.socialcount {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	font-size: .875em;
+	line-height: 2.2em;
+	overflow: hidden;
+}
+.socialcount :link,
+.socialcount :visited {
+	color: inherit;
+}
+.socialcount > li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	
+	position: relative;
+	vertical-align: top;
+	min-width: 80px;
+	text-align: center;
+	white-space: nowrap;
+	*margin-right: 4px;
+}
+.socialcount-small > li {
+	min-width: 0;
+}
+.socialcount.recommend .facebook {
+	min-width: 120px;
+}
+.socialcount-small.recommend .facebook {
+	min-width: 0;
+}
+.socialcount > li > a {
+	display: block;
+	padding: 0 5px;
+	text-decoration: none;
+	color: inherit;
+}
+.socialcount .count {
+	color: inherit;
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	text-align: center;
+	margin-left: 6px;
+}
+.socialcount .facebook iframe {
+	height: 21px;
+	width: 90px; /* recommend */
+}
+.socialcount.like .facebook iframe {
+	width: 48px; /* like */
+}
+.socialcount .button {
+	display: none;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	text-align: center;
+	pointer-events: none;
+}
+.socialcount .button iframe {
+	pointer-events: auto;
+}
+.socialcount.grade-a > li:hover .button,
+.socialcount.grade-a > li.hover .button {
+	display: block;
+}
+.socialcount.grade-a > li:hover > a,
+.socialcount.grade-a > li.hover > a {
+	cursor: default;
+}
+.socialcount.grade-a > li:hover .button iframe,
+.socialcount.grade-a > li.hover .button iframe {
+	cursor: pointer;
+}
+
+/* Inline loading */
+.socialcount .loading {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background-color: #aaaaaa;
+	background-color: rgba(170, 170, 170, 0.7);
+	color: #000;
+	text-transform: uppercase;
+	font-size: .75em;
+	text-align: center;
+}
+.socialcount .loading .dot {
+	display: inline-block;
+	/* no ie7 compat needed here, just shows the text links */
+	width: 6px;
+	height: 6px;
+	margin: 0 3px;
+	background: #fff;
+	opacity: 0;
+	border-radius: 50%;
+
+	-webkit-animation: socialCountLoadingFade .6s infinite;
+	-moz-animation: socialCountLoadingFade .6s infinite;
+	animation: socialCountLoadingFade .6s infinite;
+}
+
+.socialcount .loading .dot:nth-child(1) {
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.socialcount .loading .dot:nth-child(2) {
+	-webkit-animation-delay: .05s;
+	-moz-animation-delay: .05s;
+	animation-delay: .05s;
+}
+
+.socialcount .loading .dot:nth-child(3) {
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	animation-delay: .1s;
+}
+
+@-webkit-keyframes socialCountLoadingFade {
+	0% { opacity: 0; }
+	50% { opacity: 0.8; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes socialCountLoadingFade {
+	0% { opacity: 0;  }
+	50% { opacity: 0.8; }
+	100% { opacity: 0; }
+}
+
+@keyframes socialCountLoadingFade {
+	0% { opacity: 0; }
+	50% { opacity: 0.8; }
+	100% { opacity: 0; }
+}
+.social-icon {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  *margin-right: 5px;
+}
+
+.socialcount.grade-a > li:hover .social-icon {
+  display: none;
+}
+.icon-sprite, .icon-facebook, .icon-googleplus, .icon-share, .icon-twitter {
+  background: url('images/icon-s8df06ae4f6.png') no-repeat;
+}
+
+.icon-facebook {
+  background-position: 0 0;
+  height: 15px;
+  width: 17px;
+}
+
+.icon-googleplus {
+  background-position: -21px 0;
+  height: 17px;
+  width: 20px;
+}
+
+.icon-share {
+  background-position: -45px 0;
+  height: 16px;
+  width: 20px;
+}
+
+.icon-twitter {
+  background-position: -69px 0;
+  height: 15px;
+  width: 17px;
+}
+input[type="submit"] { font-size: 1.5rem; padding: .5rem; } 
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; font-size: 1.5rem; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+@media screen and (max-width: 480px) {
+	body { margin: 1rem; } 
+	h1 { font-size: 4rem; }	
+	h2 { font-size: 3rem; }
+}
+/* HD icons */
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .social-icon {
+    -webkit-background-size: auto 17px;
+    -moz-background-size: auto 17px;
+    -o-background-size: auto 17px;
+    background-size: auto 17px;
+    background-image: url('images/icon-hd-s9293bc9986.png');
+  }
+}
